@@ -11,7 +11,9 @@ public class HelloController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
         /* good*/
+
 		model.addAttribute("message", "Hello world!");
+        System.out.print("Hello");
 		return "hello";
 	}
 }
